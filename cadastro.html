@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.png" type="image/png">  
+</head>
+<body>
+      <!-- Seta para voltar -->
+      <a href="index.html" class="back-arrow">
+        <span class="material-icons">arrow_back</span>
+    </a>
+    <div class="example-form">
+        <h1>SafeWaters</h1>
+        <h2>Provindo Segurança em suas Piscinas</h2>
+
+        <form action="">
+            <div class="form-field">
+                <label for="nome">Nome</label>
+                <input type="text" class="nome" id="nome" placeholder="Ex. Amanda Silva" required>
+                <span class="error" id="nomeError"></span>
+            </div>
+
+            <div class="form-field">
+                <label for="usuario">Nome de Usuário</label>
+                <input type="text" class="usuario" id="usuario" placeholder="Ex. user19" required>
+                <span class="error" id="usuarioError"></span>
+            </div>
+
+            <div class="form-field">
+                <label for="idade">Idade</label>
+                <input type="number" class="idade" id="idade" placeholder="Ex. 18" min="17" max="120" required>
+                <span class="error" id="idadeError"></span>
+            </div>
+
+            <div class="form-field">
+                <label for="cpf">CPF</label>
+                <input type="text" class="cpf" id="cpf" placeholder="Ex. 123.456.789-00" required>
+                <span class="error" id="cpfError"></span>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" class="email" id="email" placeholder="Ex. Rodri1910@gmail.com" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-field">
+                <label for="senha">Senha:</label>
+                <div style="position: relative;">
+                    <input type="password" class="senha" id="senha" placeholder="Digite sua senha:" required>
+                    <button type="button" class="toggle-visibility" id="toggleSenha">
+                        <span class="material-icons">invisibility</span>
+                    </button>
+                </div>
+                <div class="error" id="senhaError"></div>
+            </div>
+            <div class="form-field">
+                <label for="confirmarsenha">Confirmar Senha:</label>
+                <div style="position: relative;">
+                    <input type="password" class="confirmarsenha" id="confirmarsenha" placeholder="Confirme sua senha:" required> 
+                    <button type="button" class="toggle-visibility" id="toggleConfirmarSenha">
+                        <span class="material-icons">invisibility</span>
+                    </button>
+                </div>
+                <div class="error" id="confirmarsenhaError"></div>
+            </div>
+            <button type="submit"><a class="Enviarlogin">Enviar</a></button>
+        </form>
+        <div class="cad-completo" id="cadastroCompleto" style="display: none;">
+            <span class="material-icons icone-sucesso">check_circle</span>
+            <p>Cadastro realizado com sucesso!</p>
+        </div>
+        
+
+        <div class="botao-login">
+            <p>Já tem Cadastro?</p>
+            <button class="nav-link" onclick="window.location.href='login.html'">Faça Login Aqui!</button>
+        </div>
+        
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

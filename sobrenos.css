@@ -1,0 +1,376 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #164a87;
+  background: linear-gradient(to bottom, #164a87, #e0eafc);
+  font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 1px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+.site-name {
+  font-family: Bodoni;
+  font-size: 24px;
+  color: #ebeef1;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(16, 87, 168, 0.9);
+  padding: 20px 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #6993bb;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar li {
+    margin: 0 15px;
+  }
+
+  .navbar a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+}
+
+p, li {
+  line-height: 1.6;
+  color: #555;
+}
+
+.ideia img {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.about-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom, #164a87, #e0eafc);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.ideia {
+  color: transparent;
+  max-width: 90%;
+  padding: 50px;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.ideia h2 {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #12447c;
+  padding: 15px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.ideia p {
+  background-color: white;
+  border-radius: 50px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 820px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 50px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #164a87;
+  width: 450px;
+  padding: 15px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: gray;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.team {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.team h2 {
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #5a7da5;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.card-body a {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  background-color: #285281;
+}
+
+.mission-vision-values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission h2 {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+
+.mission p {
+  background-color: white;
+  border-radius: 50px;
+  padding: 50px;
+  text-align: center;
+  font-size: 22px;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.vision h2 {
+  margin-top: 140px;
+  margin-bottom: 70px;
+}
+
+.vision p {
+  padding: 50px;
+  background-color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 22px;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.values .card {
+  width: 15rem;
+  background-color: #1699b9;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.values .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.values .card i {
+  font-size: 2em;
+  color: #c5c5c5;
+  margin-bottom: 10px;
+}
+
+.values .card h5 {
+  font-size: 1.2em;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  text-align: center;
+  margin: 20px;
+  display: inline-block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardizinho-container {
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cardizinho {
+  width: 18rem;
+  border-radius: 55px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #164a87;
+  box-sizing: border-box;
+  flex: 1 1 calc(33.33% - 40px);
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 15px; 
+}
+
+.cardizinho i {
+  font-size: 2em;
+  color: #e9ebec;
+  margin-bottom: 5px; 
+}
+
+.cardizinho h5 {
+  font-size: 1.5em;
+  color: white;
+  margin: 5px 0 0; 
+}
+
+.cardizinho:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cardizinho-title {
+  font-size: 1.5em;
+  color: gray;
+}
+
+h2:hover {
+  transform: translateY(-2px);
+  transition: color 0.3s, transform 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p:hover {
+  transform: translateY(-1px);
+  transition: color 0.3s, transform 0.3s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+

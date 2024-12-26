@@ -1,0 +1,324 @@
+body {
+  font-family: 'Roboto Slab', serif; /* Aplica a fonte ao corpo do site */
+  margin: 0;
+  padding: 0;
+  color: #164a87; /* Cor do texto */
+  background: linear-gradient(to bottom, #164a87, #e0eafc); /* Degradê mais evidente */
+  font-family: 'Roboto Slab', serif; /* Aplica a fonte ao corpo do site */
+
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif; /* Aplica a fonte a títulos específicos */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute; /* Para fixar no canto da tela */
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  z-index: 1000; /* Coloca acima de outros elementos */
+}
+
+.logo {
+  width: 70px; /* Ajuste o tamanho da logo */
+  height: 70px; /* Mantém altura igual à largura para a forma redonda */
+  border-radius: 50%; /* Torna a imagem redonda */
+  margin-right: 10px; /* Espaço entre logo e texto */
+}
+
+.site-name {
+  font-family: Bodoni;
+  font-size: 24px; /* Tamanho do texto */
+  color: #ebeef1; /* Cor do texto */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+  position: fixed; /* Fixa a barra no topo da tela */
+  top: 0;
+  width: 100%; /* Largura total */
+  height: 60px;
+  background-color: rgba(16, 87, 168, 0.9); /* Fundo com leve transparência */
+  padding: 20px 0; /* Reduz o padding para uma barra mais compacta */
+  z-index: 100; /* Mantém a barra sobre outros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centraliza os links */
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 30px; /* Aumenta o espaçamento entre os itens */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 30px; /* Borda arredondada nos links */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.navbar a:hover {
+  background-color: #6993bb; /* Muda o fundo ao passar o mouse */
+  color: #fff;
+  transform: scale(1.1); /* Aumenta levemente o tamanho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .navbar li {
+    margin: 0 15px;
+  }
+
+  .navbar a {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+}
+/* Corpo do site */
+/* Corpo do site */
+p, li {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Seção principal de venda */
+.venda-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.content {
+  background-color: rgba(22, 74, 135, 0.9); /* Fundo semi-transparente */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+}
+
+.title {
+  font-size: 36px; /* Diminuindo o tamanho */
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px; /* Diminuindo o tamanho */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.description, .instructions {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+
+
+/* Seções de informações */
+.sections-container {
+  padding: 200px; /* Diminuindo o padding */
+}
+
+.section {
+  display: flex; /* Flexbox para alinhamento */
+  flex-direction: row; /* Imagem à esquerda e texto à direita */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaçamento igual */
+  margin-bottom: 30px; /* Ajustando espaço */
+  max-width: 1000px; /* Limite de largura */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px; /* Diminuindo o arredondamento */
+  background-color: #fff;
+  padding: 20px; /* Diminuindo o padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Aumentando a sombra ao hover */
+}
+
+.text-side {
+  max-width: 60%; /* Ajusta largura do texto */
+  margin-left: 15px; /* Espaço entre o texto e a imagem */
+}
+.text-side h3{
+  font-size: 30px;
+}
+.text-side p{
+  font-size: 20px;
+}
+
+.image-side {
+  max-width: 35%; /* Ajusta largura da imagem */
+  display: flex; /* Flexbox para alinhar imagens verticalmente */
+  flex-direction: column; /* Alinhamento em coluna para múltiplas imagens */
+}
+
+.image-side img {
+  width: 250px; /* Assegura que as imagens ocupem a largura do contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-top: 10px; /* Espaçamento entre as imagens */
+}
+
+/* Botões de download */
+.download-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.android-button, .ios-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 25px; /* Diminuindo o padding */
+  color: white;
+  font-size: 18px; /* Aumentando o tamanho */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.android-button i, .ios-button i {
+  margin-right: 10px;
+  font-size: 18px; /* Diminuindo o tamanho do ícone */
+}
+
+.android-button {
+  background-color: #3DDC84; /* Mantendo as cores originais */
+}
+
+.android-button:hover {
+  background-color: #2ea963;
+  transform: scale(1.05);
+}
+
+.ios-button {
+  background-color: #000; /* Mantendo as cores originais */
+}
+
+.ios-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* QR Code */
+.qr-code img {
+  margin-top: 30px;
+  width: 130px; /* Diminuindo o tamanho do QR code */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.qr-code img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Passos de instalação */
+.steps {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.steps li {
+  font-size: 20px; /* Aumentando o tamanho */
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+/* Botões de download */
+.download-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.android-button, .ios-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  color: white;
+  font-size: 16px; /* Diminuindo o tamanho */
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.android-button i, .ios-button i {
+  margin-right: 10px;
+  font-size: 20px; /* Diminuindo o tamanho do ícone */
+}
+
+.android-button {
+  background-color: #3DDC84; /* Mantendo as cores originais */
+}
+
+.android-button:hover {
+  background-color: #2ea963;
+  transform: scale(1.05);
+}
+
+.ios-button {
+  background-color: #000; /* Mantendo as cores originais */
+}
+
+.ios-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* QR Code */
+.qr-code img {
+  margin-top: 30px;
+  width: 150px; /* Diminuindo o tamanho do QR code */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.qr-code img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Passos de instalação */
+.steps {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.steps li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+}

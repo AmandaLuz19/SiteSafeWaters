@@ -1,0 +1,185 @@
+body {
+  background-image: url('assets/piscina.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.example-form {
+  max-width: 550px;
+  padding: 40px;
+  background-color: rgba(144, 194, 218, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 1px solid #89a8ca;
+
+}
+
+.example-form h1 {
+  color: #0056b3;
+}
+
+.example-form h2 {
+  color: rgb(53, 50, 50);
+  margin-bottom: 30px;
+}
+
+.form-field {
+  margin-bottom: 25px;
+  text-align: left;
+  
+}
+
+.form-field label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+.form-field input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-field input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+}
+
+button {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  
+}
+
+button:hover {
+  background-color: #004494;
+}
+
+.cad-completo {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-sucesso {
+  font-size: 4em;
+  color: #28a745; 
+  margin-bottom: 15px;
+}
+
+
+
+
+.toggle-visibility {
+  background: none; 
+  border: none; 
+  cursor: pointer;
+  position: absolute;
+  margin-top: 1px;
+  right: 30px; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  font-size: 10px; 
+  color: #555; 
+  border-radius: 100%; 
+  width: 20px; 
+  height: 40px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.toggle-visibility:hover {
+  background-color: rgba(40, 100, 128, 0.5); 
+}
+
+.botao-login {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botao-login button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-login button:hover {
+  background-color: #004494;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link {
+  color: white;
+  font-size: 15px;
+}
+
+p {
+  color: rgb(27, 26, 26);
+  font-weight: bold;
+}
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 90px;
+  font-size: 48px;
+  color: #164a87;
+  text-decoration: none;
+  background-color: #a9cdf3;
+  border-radius: 10px;
+}
+.back-arrow .material-icons {
+  font-size: 40px; 
+  color: #0056b3;
+}
+.back-arrow:hover {
+  color: #0056b3;
+}
